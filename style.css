@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width:98%;
+    height: 100vh;
+    margin: .5vh auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap:10px;
+}
+
+.foto {
+    width:100%;
+    height: 100%;
+    position: relative;
+    
+}
+
+.foto-1 {
+    /* grid-area: 1/1/2/2; */
+    background: url(img/alexandru-acea-Of5Q41Gnxzo-unsplash.webp) center/cover;
+}
+.foto-2 {
+    /* grid-area: 1/2/2/3; */
+    background: url(img/blake-wisz-q3o_8MteFM0-unsplash.webp) center/cover;
+}
+.foto-3 {
+    /* grid-area: 2/1/3/2; */
+    background: url(img/clay-banks-qW_k6x5OfRc-unsplash.webp) center/cover;
+}
+.foto-4 {
+    /* grid-area: 2/2/3/3; */
+    background: url(img/daniela-araya-iEJ--5kY4lU-unsplash.webp) center/cover;
+}
+.foto-5 {
+    /* grid-area: 2/3/3/-1; */
+    background: url(img/doran-erickson-Gvf5hvRruIc-unsplash.webp) center/cover;
+}
+.foto-6 {
+    /* grid-area: 3/1/-1/2; */
+    background: url(img/jason-briscoe-amLfrL8LGls-unsplash.webp) center/cover;
+}
+.foto-7 {
+    /* grid-area: 3/2/-1/3; */
+    background: url(img/michael-soledad-9juYjd6iQLU-unsplash.webp) center/cover;
+}
+.foto-8 {
+    /* grid-area: 1/3/2/-1; */
+    background: url(img/russ-ward-18MJRuL4tUE-unsplash.webp) center/cover;
+}
+.foto-9 {
+    /* grid-area: 3/3/-1/-1; */
+    background: url(img/rutger-heijmerikx-4p5JKuCfPrg-unsplash.webp) center/cover;
+}
+
+.img-block {
+    height: 100%;
+    width:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+.img {
+    width:100%;
+    height: 100%;
+    object-fit:cover;
+    display: block;
+    
+}
+
+.foto-hover {
+    width:100%;
+    height: 0;
+    background: rgba(0,0,0,.6);
+    position: absolute;
+    bottom: 0;
+     left: 0;
+    /*transition: height .5s ease-out; */
+}
+
+.foto:hover .foto-hover{
+    height: 100%;
+}
+
+/* .foto:hover  .heading{
+    display: block;
+} */
+
+.heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    color:white;
+}
